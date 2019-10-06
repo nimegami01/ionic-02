@@ -1,0 +1,55 @@
+<ion-content class="login-page">
+  <div class="bg-all"></div>
+  <div class="bg-vx"></div>
+  <div class="bg-vx2"></div>
+  <div class="content">
+    <form #form="ngForm" (ngSubmit)="register(form)">
+      <ion-grid>
+        <ion-row justify-content-center>
+          <ion-col align-self-center>
+            <div text-center class="h3-stylea">
+              <h3>
+                Login Nimegami
+              </h3>
+              <span class="h3-style"></span>
+            </div>
+            <div class="icon"></div>
+            <div class="bg-input">
+              <ion-input
+                name="name"
+                type="text"
+                placeholder="Username"
+                required
+              ></ion-input>
+              <ion-input
+                name="password"
+                type="password"
+                placeholder="Password"
+                required
+              ></ion-input>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" expand="block">Login</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button type="submit" expand="block" color="secondary"
+              >Register</ion-button
+            >
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div text-center>
+              <div class="forgot-password">
+                Forgot password ? Click for reset password.
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+</ion-content>

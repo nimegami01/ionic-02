@@ -1,0 +1,29 @@
+ion-label {
+    color: #333 !important;
+    font-size: 13px !important;
+}
+
+.content {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+ion-content {
+    --background: #eee;
+}
+
+.list-data {
+    height: 200px;
+    overflow: auto;
+}
+
+h3 {
+    font-size: 14px;
+    margin-left: 10px;
+    border-bottom: 2px solid rgb(160, 192, 235);
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}

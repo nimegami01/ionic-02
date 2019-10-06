@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Add Post</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="content">
+    <ion-item>
+      <ion-label position="floating">Title</ion-label>
+      <ion-input type="text" name="title"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Embed Video</ion-label>
+      <ion-input type="text" name="embed"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Diskripsi</ion-label>
+      <ion-textarea name="sinopsis"></ion-textarea>
+    </ion-item>
+
+    <h3>Kategori</h3>
+    <ion-list class="list-data">
+      <ion-item *ngFor="let entry of form">
+        <ion-label>{{entry.val}}</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button color="primary" name="publish" expand="block">Publish</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="primary" name="draft" expand="block">Draft</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

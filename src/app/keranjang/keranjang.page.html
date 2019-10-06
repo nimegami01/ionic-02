@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>keranjang</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="content">
+    <ion-item *ngFor="let entry of kontol">
+      <ion-checkbox slot="end" value="xxx">
+      </ion-checkbox>
+      <div class="produk">
+        <div class="thumbnail">
+          <img src="{{entry.img}}">
+        </div>
+        <h3>{{entry.title}}</h3>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-button color="primary">Rp. {{entry.harga}}</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button color="success">Beli</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-item>
+  </div>
+
+  <div class="buy-all">
+    <ion-button color="primary" expand="block"> Beli</ion-button>
+  </div>
+
+</ion-content>
